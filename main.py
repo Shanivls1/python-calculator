@@ -8,7 +8,7 @@ def show_dashboard():
         print("undefined operation!\n")
         return 1
     n1, n2 = input("enter first number:"), input("enter second number:")
-    if not n1.isdigit() or not n2.isdigit():
+    if not n1.isnumeric() or not n2.isnumeric():
         print("only numbers are allowed!\n")
         return 1
     if operation == '+':
